@@ -1,0 +1,23 @@
+<div> <h1>This is employee component</h1>
+
+    <div>
+        <span>Date : </span> <input type="text" [(ngModel)]="myCurrenntEmployee.date" #ctrl="ngModel">
+    </div>
+
+    <div>
+        <span>TemperatureCelsius : </span>     <input type="text" [(ngModel)]="myCurrenntEmployee.temperatureCelsius" #ctrl="ngModel">
+    </div>
+    <div>
+        <span>Summary : </span> <input type="text" [(ngModel)]="myCurrenntEmployee.summary" #ctrl="ngModel"> 
+    </div>
+    
+    <div>
+        <span>SummaryField : </span>  <input type="text" [(ngModel)]="myCurrenntEmployee.summaryField" #ctrl="ngModel">  
+    </div>
+    
+    <div>
+        <span>SummaryWords : </span> <input type="text" [(ngModel)]="myCurrenntEmployee.summaryWords" #ctrl="ngModel">  
+    </div>
+
+    <input type="button" value="Submit" (click)="postEmployeeSubmit()">
+<div>
